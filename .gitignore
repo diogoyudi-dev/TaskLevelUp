@@ -18,6 +18,7 @@ target/
 *.iws
 *.iml
 *.ipr
+echo "src/main/resources/application.yml" >> .gitignore
 
 ### NetBeans ###
 /nbproject/private/
