@@ -48,7 +48,7 @@ public class Task {
     @Enumerated(EnumType.STRING)
     @Column(nullable = false, length = 20)
     @Builder.Default
-    private StatusTarefa statusTarefa = StatusTarefa.PENDENTE;
+    private StatusTask statusTask = StatusTask.PENDENTE;
 
     private LocalDateTime data;
 

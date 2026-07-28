@@ -1,6 +1,6 @@
 package com.taskLevel.up.models;
 
-public enum StatusTarefa {
+public enum StatusTask {
     PENDENTE,
     CONCLUIDA,
     ATRASADA;
