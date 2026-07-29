@@ -55,7 +55,7 @@ public class Task {
     private Integer xpGanho;
     @Column(nullable = false)
     @Builder.Default
-    private Boolean atividadeCompleta =  false;
+    private boolean atividadeCompleta =  false;
     @Column(nullable = false, updatable = false)
     @Builder.Default
     private LocalDate criado = LocalDate.now();
