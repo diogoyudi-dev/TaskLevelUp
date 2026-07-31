@@ -3,7 +3,6 @@ package com.taskLevel.up.dto.task;
 import com.taskLevel.up.models.Dificuldade;
 import com.taskLevel.up.models.StatusTask;
 import com.taskLevel.up.models.Task;
-import com.taskLevel.up.models.Usuario;
 
 
 import java.time.LocalDate;
