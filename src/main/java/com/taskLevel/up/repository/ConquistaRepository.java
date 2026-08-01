@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface ConquistaRepositorio extends JpaRepository<Conquista, Integer> {
+public interface ConquistaRepository extends JpaRepository<Conquista, Integer> {
 
     List<Conquista> findAllByModeloConquista(ModeloConquista modelo);
 }

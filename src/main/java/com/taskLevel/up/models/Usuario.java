@@ -20,8 +20,9 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 
-import java.io.Serializable;
+
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
 
@@ -64,7 +65,7 @@ public class Usuario implements UserDetails{
     private LocalDate ultimaConclusao;
     @Column(nullable = false, updatable = false)
     @Builder.Default
-    private LocalDate criacaoConta = LocalDate.now();
+    private LocalDateTime criacaoConta = LocalDateTime.now();
 
 
 

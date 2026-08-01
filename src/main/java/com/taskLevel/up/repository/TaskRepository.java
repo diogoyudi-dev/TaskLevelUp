@@ -1,6 +1,7 @@
 package com.taskLevel.up.repository;
 
 import com.taskLevel.up.models.Dificuldade;
+import com.taskLevel.up.models.StatusTask;
 import com.taskLevel.up.models.Task;
 import com.taskLevel.up.models.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -14,11 +15,11 @@ import java.util.Optional;
 
 public interface TaskRepository extends JpaRepository<Task, Integer> {
 
-List<Task> findAllByUsuarioOrderByCriado(Usuario usuario);
+List<Task> findAllByUsuarioOrderByCriadoDesc(Usuario usuario);
 Optional<Task> findByIdAndUsuario(Long id, Usuario usuario);
 
-long countByUsuarioAndStatus(Usuario usuario, String status);
-long countByUsuarioAndStatusAndDificuldade(Usuario usuario, String status, Dificuldade dificuldade);
+long countByUsuarioAndStatus(Usuario usuario, StatusTask status);
+long countByUsuarioAndStatusAndDificuldade(Usuario usuario, StatusTask status, Dificuldade dificuldade);
 
     @Modifying
     @Query("UPDATE Task t SET t.statusTask = com.taskquest.models.StatusTask.ATRASADA " +

@@ -7,5 +7,6 @@ public record TaskCompleta(TaskDTO taskDTO,
                            int xpGanho,
                            int totalXp,
                            int novoLevel,
-                           List<String> ConquistasDesbloqueadas){
+                           boolean upouLevel,
+                           List<String> conquistasBloqueadas){
 }

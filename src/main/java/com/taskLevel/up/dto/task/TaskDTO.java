@@ -4,8 +4,6 @@ import com.taskLevel.up.models.Dificuldade;
 import com.taskLevel.up.models.StatusTask;
 import com.taskLevel.up.models.Task;
 
-
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public record TaskDTO(
@@ -17,14 +15,14 @@ public record TaskDTO(
         LocalDateTime data,
         Integer xpGanho,
         boolean atividadeCompleta,
-        LocalDate criado,
-        LocalDate completado)
+        LocalDateTime criado,
+        LocalDateTime completado)
 {
 
     public static TaskDTO taskDTO(Task task) {
         return new TaskDTO(task.getId(), task.getTitulo(), task.getDescricao(),
                 task.getDificuldade(), task.getStatusTask(), task.getData(),
-                task.getXpGanho(), task.isAtividadeCompleta(),
+                task.getXpGanho(), task.isAtividadeAtrasadaCompleta(),
                 task.getCriado(), task.getCompletado()
         );
     }

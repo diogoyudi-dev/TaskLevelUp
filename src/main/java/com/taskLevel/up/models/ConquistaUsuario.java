@@ -35,6 +35,7 @@ public class ConquistaUsuario {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(nullable = false)
     private Conquista conquista;
+                        
     @Column(nullable = false)
     private LocalDateTime dataConclusao;
 }

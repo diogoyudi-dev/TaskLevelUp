@@ -55,12 +55,12 @@ public class Task {
     private Integer xpGanho;
     @Column(nullable = false)
     @Builder.Default
-    private boolean atividadeCompleta =  false;
+    private boolean atividadeAtrasadaCompleta =  false;
     @Column(nullable = false, updatable = false)
     @Builder.Default
-    private LocalDate criado = LocalDate.now();
+    private LocalDateTime criado = LocalDateTime.now();
     @Column(nullable = false)
-    private LocalDate completado;
+    private LocalDateTime completado;
 
 
 }
